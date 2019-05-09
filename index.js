@@ -12,7 +12,5 @@ function exactMatch(drivers, {attribute: value}) {
 }
 
 function exactMatchToList(drivers, {attribute: value}) {
-  let filterList = drivers.filter(d => d.attribute === value)
-  debugger;
-  filterList.map(d => d.name)
+  let filterList = drivers.filter(function(d) {return d.attribute === value}).map(d => d.name)
 }
