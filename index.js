@@ -12,6 +12,7 @@ function exactMatch(drivers, object) {
     let matches = false;
 
     for (const key in object) {
+      debugger; 
        matches = d[key] === object[key]
     }
     return matches
