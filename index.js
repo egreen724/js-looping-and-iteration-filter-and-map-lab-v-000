@@ -14,8 +14,8 @@ function exactMatch(drivers, object) {
     for (const key in object) {
        matches = d[key] === object[key]
     }
-  }
-  return matches;)
+    return matches
+  });
 }
 
 function exactMatchToList(drivers, {attribute: value}) {
