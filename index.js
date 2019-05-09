@@ -18,7 +18,7 @@ function exactMatch(drivers, object) {
   });
 }
 
-function exactMatchToList(drivers, {attribute: value}) {
+function exactMatchToList(drivers, object) {
   return drivers.filter(function(d) {
     let matches = false;
 
