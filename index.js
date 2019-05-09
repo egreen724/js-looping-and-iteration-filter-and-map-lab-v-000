@@ -13,6 +13,6 @@ function exactMatch(drivers, {attribute: value}) {
 
 function exactMatchToList(drivers, {attribute: value}) {
   return drivers.filter(function(d) {
-
-  })
+    return d[attribute] === value;
+  }).map(d => d.name)
 }
